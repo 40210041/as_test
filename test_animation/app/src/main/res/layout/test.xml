@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txt_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/img_2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:text="This is a test page"
+            android:textSize="15pt">
+
+        </TextView>
+
+        <ImageView
+            android:id="@+id/img_2"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:background="@drawable/blue_00"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            >
+        </ImageView>
+
+        <Button
+            android:id="@+id/btn_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img_2"
+            android:layout_centerHorizontal="true"
+            android:text="change me lol"/>
+
+        <Button
+            android:id="@+id/btn_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_2"
+            android:layout_centerHorizontal="true"
+            android:text="go back"/>
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
