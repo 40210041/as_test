@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         //go_next.putExtra("first_data", data_1);
         //go_next.putExtra("second_data", data_2);
 
-        //create newe bundle – same as above but less to do
+        //create new bundle – same as above but less to do
         Bundle bundle = new Bundle();
         bundle.putString("first_data", data_1);
         bundle.putString("second_data", data_2);

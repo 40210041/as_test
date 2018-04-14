@@ -8,42 +8,73 @@
         android:layout_height="match_parent">
 
         <TextView
-            android:id="@+id/txt_2"
+            android:id="@+id/txt_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_above="@id/img_2"
             android:layout_centerHorizontal="true"
-            android:layout_marginBottom="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
             android:text="This is a test page"
-            android:textSize="15pt">
-
+            android:textSize="20sp">
         </TextView>
 
-        <ImageView
-            android:id="@+id/img_2"
-            android:layout_width="250dp"
-            android:layout_height="250dp"
-            android:background="@drawable/blue_00"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            >
-        </ImageView>
 
-        <Button
-            android:id="@+id/btn_2"
+        <ImageView
+            android:id="@+id/img_preview"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/img_2"
+            android:layout_height="200dp"
             android:layout_centerHorizontal="true"
-            android:text="change me lol"/>
+            android:layout_below="@+id/txt_title"
+            android:src="@drawable/blue_00"/>
+
+        <RadioGroup
+            android:id="@+id/rad_grp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_preview"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+
+            <TextView
+                android:id="@+id/txt_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Please choose the shirt colour:"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/radio_blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Blue"
+                android:textSize="18sp"/>
+
+            <RadioButton
+                android:id="@+id/radio_pink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pink"
+                android:textSize="18sp"/>
+
+            <RadioButton
+                android:id="@+id/radio_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="White"
+                android:textSize="18sp"/>
+        </RadioGroup>
 
         <Button
             android:id="@+id/btn_3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/btn_2"
+            android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
-            android:text="go back"/>
+            android:layout_marginBottom="58dp"
+            android:text="go back"
+            android:onClick="go_back"/>
     </RelativeLayout>
 
 </android.support.constraint.ConstraintLayout>
